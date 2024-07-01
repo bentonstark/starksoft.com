@@ -1,0 +1,253 @@
+/* ================================
+    CSS STYLES FOR STARKSOFT STORE 
+    v1.0
+   ================================
+*/   
+
+BODY
+{
+}
+
+/* */
+.HomeHead
+{
+    color: #999966;
+    font-family: Verdana, Arial;
+    font-size: 20px;
+    font-weight: bold;
+    HEIGHT: 35px
+}
+
+
+/* text style for the links */
+A.SiteLink, A.SiteLink:link, A.SiteLink:visited
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 11px;
+}   
+
+A.SiteLink:hover    
+{
+    text-decoration: underline;
+    color: white;
+}
+
+A.SiteLinkBold, A.SiteLinkBold:link, A.SiteLinkBold:visited
+{
+    color: #dddddd;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size:  11px;
+    font-weight: bold
+}
+
+A.SiteLinkBold:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* */
+A.MenuUnselected, A.MenuUnselected:link, A.MenuUnselected:visited
+{
+    color: white;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size:  12px;
+    font-weight: bold;
+    line-height: 16px;
+    padding-left: 10px
+}
+
+A.MenuUnselected:hover
+{
+    color: white;
+    text-decoration: underline;
+    padding-left: 10px
+}
+
+A.MenuSelected
+{
+    color: white;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size:  12px;
+    font-weight: bold;
+    line-height: 16px;
+    padding-left: 10px
+}
+
+A.MenuSelected:hover
+{
+    color: white;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    padding-left: 10px
+}
+
+/* GENERAL */
+
+/* text style used for most text rendered by modules */
+.Normal
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 12px    
+}
+
+.NormalDouble
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 20px    
+}
+
+/* text style used for textboxes in the admin pages, for Nav compatibility */
+.NormalForm
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* text style used for selects in the admin pages, for Nav compatibility */
+.NormalSelect
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+/* text style used for textboxes in the edit pages, for Nav compatibility */
+.EditTextBox
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #999966;
+    width: 100%;
+}
+
+/* text style used for controls in the admin and edit pages, for Nav compatibility */
+.NormalControl
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+/* text style used for checkboxes in the admin and edit pages, for Nav compatibility */
+.NormalCheckBox
+{
+    margin-left: -4px;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+/* text style used for checkboxes in the admin and edit pages, for Nav compatibility */
+.NormalRadio
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    text-indent: -5px;
+}
+
+/* text style used for checkboxes in the admin and edit pages, for Nav compatibility */
+.NormalButton
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    text-indent: -5px;
+/*    border-style: solid;
+    border-width: 1px;
+    border-color: #cccc99; */
+    background-color:#ccccaa;    
+}
+
+.NormalRed
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: red
+}
+
+.NormalBold
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 12px    
+}
+
+.NormalItalic
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 16px    
+}
+
+
+
+A:link  {
+    text-decoration: none;
+    color:  black;
+}
+
+A, A:hover {
+    text-decoration: underline;
+    color:  black;
+}
+
+SMALL   {
+    font-size:  8px;
+}
+
+BIG {
+    font-size:  14px;
+}
+
+BLOCKQUOTE, PRE {
+    font-family:    Lucida Console, monospace;
+}
+
+
+UL LI   {
+    list-style-type:    square ;
+}
+
+UL LI LI    {
+    list-style-type:    disc;
+}
+
+UL LI LI LI {
+    list-style-type:    circle;
+}
+
+OL LI   {
+    list-style-type:    decimal;
+}
+
+OL OL LI    {
+    list-style-type:    lower-alpha;
+}
+
+OL OL OL LI {
+    list-style-type:    lower-roman;
+}
+
+HR {
+    height:1pt;
+    text-align:left
+}
+
