@@ -1,0 +1,40 @@
+<svg width="240" height="96" viewBox="6 40 52 18" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hardware Security Device Body -->
+  <rect x="8" y="40" width="36" height="18" rx="3" ry="3" 
+        fill="#2563eb" stroke="#1e40af" stroke-width="2"/>
+  
+  <!-- USB Connector -->
+  <rect x="44" y="45" width="6" height="8" rx="1" ry="1" 
+        fill="#6b7280" stroke="#4b5563" stroke-width="1"/>
+  
+  <!-- Touch Button/Sensor (no highlighting) -->
+  <circle cx="26" cy="49" r="4" fill="#374151" stroke="#4b5563" stroke-width="1"/>
+  <circle cx="26" cy="49" r="1.5" fill="#6b7280"/>
+
+  <!-- LCD Display Area -->
+  <rect x="30" y="43" width="12" height="6" rx="1" ry="1" 
+        fill="#000000" stroke="#374151" stroke-width="1"/>
+  
+  <!-- PIN Label -->
+  <text x="31" y="45.5" font-family="monospace" font-size="1.5" fill="#00ff00" font-weight="bold">PIN</text>
+  
+  <!-- LCD Numbers being entered -->
+  <text x="31" y="48" font-family="monospace" font-size="1.8" fill="#00ff00" font-weight="bold">123456</text>
+  
+  <!-- Cursor/Input indicator -->
+  <rect x="41.5" y="46.8" width="0.3" height="1.5" fill="#00ff00">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Device brand area -->
+  <rect x="12" y="44" width="8" height="1.5" rx="0.5" fill="#93c5fd"/>
+  <rect x="12" y="52" width="10" height="1.5" rx="0.5" fill="#93c5fd"/>
+  
+
+  
+  <!-- Motion lines showing finger movement -->
+  <g stroke="#9ca3af" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M28 38 Q29 41 28 44" stroke-dasharray="2,1"/>
+    <path d="M24 38 Q25 41 24 44" stroke-dasharray="2,1"/>
+  </g>
+</svg>

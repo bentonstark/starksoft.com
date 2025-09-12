@@ -1,116 +1,720 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starksoft - 3490 Hildon Cir</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <title>Starksoft Sierra - Hardware Security Password Manager</title>
+    <meta name="description" content="Starksoft Sierra: A secure password manager for the security conscious. Hardware-encrypted with Yubikey, completely offline, cross-platform.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bruno+Ace+SC&display=swap" rel="stylesheet">
 </head>
-
-<body class="bg-black muli">
-
-    <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
-        <div class="flex justify-between">
-
-            <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
-                class="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
-            </a>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">starksoft.com</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#security-policies">Policies</a></li>
+                <li><a href="#yubikey-compatibility">Yubikeys</a></li>
+                <li><a href="#video-tutorials">Tutorials</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#pricing">Licensing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-
     </nav>
 
-    <section class="p-0 md-p-5">
-        <h2 class="white fs-l3 fw-700">3490 Hildon Cir</h2>
-        <h4 class="white fs-l1 fw-300">0.33 Acre Lot</h4>   
-        <h4 class="white fs-l1 fw-300">$650k</h4>   
-    </section>        
-  
-    <!-- slider -->
-    <section class="relative bg-indigo-lightest-10">
-        <div id="slider-1">
-            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-                <img class="w-100pc" src="assets/images/DSC00075-S.JPG" alt="">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Starksoft Sierra
+                    <span class="hero-accent">Password Manager</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Built for the security conscious or professional who demands maximum security from a password manager to keep their secrets safe and under their complete control. 
+                </p>
+                <p class="hero-subtitle">
+                    Every secret uniquely encrypted and protected by Yubikey hardware security and touch and PIN policies. 
+                </p>
+                <div class="hero-features">
+                    <div class="feature-badge">
+                        <span>Hardware Security</span>
+                    </div>
+                    <div class="feature-badge">
+                        <span>Passwordless</span>
+                    </div>
+                    <div class="feature-badge">
+                        <span>Touch and PIN Policies</span>
+                    </div>
+                    <div class="feature-badge">
+                        <span>AES-256 Encryption</span>
+                    </div>
+                    <div class="feature-badge">
+                        <span>Cross-Platform</span>
+                    </div>
+                    <div class="feature-badge">
+                        <span>USB Portable</span>
+                    </div>
+                    <div class="feature-badge">
+                        <span>No Cloud Storage</span>
+                    </div>
+                    <div class="feature-badge">
+                        <span>PIV Smart Card</span>
+                    </div>
+                    <div class="feature-badge">
+                        <span>Free for Personal Use</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#download" class="btn-primary">Download Now</a>
+                    <a href="#features" class="btn-secondary">Learn More</a>
+                </div>
             </div>
-            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-                <img class="w-100pc" src="assets/images/DSC00072-S.JPG" alt="">
-            </div>
-            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-                <img class="w-100pc" src="assets/images/DSC00071-S.JPG" alt="">
-            </div>
-            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-                <img class="w-100pc" src="assets/images/map1.png" alt="">
-            </div>
-            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-                <img class="w-100pc" src="assets/images/map2.png" alt="">
-            </div>
-            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-                <img class="w-100pc" src="assets/images/map3.png" alt="">
-            </div>
-            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-                <img class="w-100pc" src="assets/images/survey.png" alt="">
-            </div>
-            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-                <img class="w-100pc" src="assets/images/survey2.png" alt="">
-            </div>
-            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-                <img class="w-100pc" src="assets/images/front.png" alt="">
-            </div>
-            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-                <img class="w-100pc" src="assets/images/side.png" alt="">
+            <div class="hero-visual">
+                <div class="hero-icon">
+                    <img src="assets/images/touch-and-pin-security-device-icon.svg" alt="Touch and PIN Security Device">
+                </div>
             </div>
         </div>
-        <ul class="absolute list-none w-100pc flex justify-between top-50pc">
-            <li><button
-                    class="prev ml-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2 focus-indigo-lighter outline-none"><i
-                        data-feather="chevron-left"></i></button></li>
-            <li><button
-                    class="next mr-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2  focus-indigo-lighter outline-none"><i
-                        data-feather="chevron-right"></i></button></li>
-        </ul>
     </section>
 
-    <!-- blog -->
-    <section class="p-0 md-p-5">
-        <div class="flex-wrap">
-            <div class="w-1000pc md-w-333pc p-10">
-                    <p class="fw-600 white fs-m3 mt-3">
-                        Located in the cute and quiet Keswick Village neighborhood on a private circle street in Chamblee just outside of Brookhaven near Johnson's Ferry Rd and Ashford Dunwoody Rd.  This is a 0.33 acre, privately wooded vacant lot zoned NR-1 already connected to public sewer, water, high speed Internet, and natural gas waiting for your custom home. Just feet from Keswick Park with a private access trail through the neighborhood. Conveniently located near Chamblee and Brookhaven shopping, restaurants, schools, Chamblee Rail Trail, PATH trail, and Marta. Walkable to Keswick Park, Blackburn Park, Whole Foods, Publix, Henri's, Pure Taqueria, Marlow’s Tavern, Primrose, Starbucks, and dozens of new shops and eateries.  Also walkable to highly ranked Chamblee Charter High School and Chamblee Middle School.  Within the Montgomery Elementary Schools district.  Close to Atlanta's top private schools St. Martin's Episcopal School, Marist School, OLA, and St. Pius X High School.  No HOA or additional building restrictions beyond standard Chamblee NR-1 zoning.
+    <!-- Main Video Section -->
+    <section class="main-video">
+        <div class="video-wrapper-fullwidth">
+            <iframe 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="Starksoft Sierra Overview" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="getting-started" class="getting-started">
+        <div class="container">
+            <h2 class="section-title">Getting Started</h2>
+            <p class="section-subtitle">Secure your secrets with hardware security in 4 steps</p>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Get a Yubikey</h3>
+                        <p>Use an existing Yubikey 5 Series device or <a href="#yubikey-compatibility" class="step-link"> purchase a new one</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Download Starksoft Sierra</h3>
+                        <p><a href="verify-hash.html" class="step-link">Verify file integrity</a> after downloading</p>
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Personalize your Yubikey</h3>
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Protect and Store your Secrets</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="getting-started-cta">
+                <a href="#download" class="btn-primary">Download Now</a>
+                <a href="#video-tutorials" class="btn-secondary">Watch Tutorial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <p class="section-subtitle">Designed with paranoid-level security in 
+                mind as well as ease of use and portability</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="assets/images/secure-microprocessor-icon.svg" alt="Secure Microprocessor Icon">
+                    </div>
+                    <h3>Hardware Security</h3>
+                    <p>Every secret protected with hardware security using Yubikey hardware and policies.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="assets/images/encryption-icon.svg" alt="Encryption Icon">
+                    </div>
+                    <h3>Strong Encryption</h3>
+                    <p>Starksoft Sierra uses AES-256-GCM with RSA public/private key encryption to protect your secrets.  Your RSA
+                        private keys are protected by your Yubikey hardware and policies and can not be exported.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        🍎 🪟 🐧
+                    </div>
+                    <h3>Cross-Platform</h3>
+                    <p>Runs on Mac, Windows, and Linux. 
+                        Starksoft Sierra is a self-contained executable binary with no external dependencies.  Just download and run.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="assets/images/multiple-yubikeys-icon.svg" alt="Multiple Yubikeys Icon">
+                    </div>
+                    <h3>Multiple Yubikey Support</h3>
+                    <p>Personalize multiple Yubikeys for backup or shared access. 
+                        </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>Portable and Standalone</h3>
+                    <p>Run directly from a secure USB drive without installation. Take your encrypted 
+                        secrets database anywhere securely. 
                     </p>
+                    <br>
+                    <p>
+                        Store on a FIPS 140-2 Level 3 hardware 
+                        based encrypted USB drive such as the Apricorn Aegis Secure Key for even more layers of protection.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">₿</div>
+                    <h3>Crypto and Finance</h3>
+                    <p>Suited for Bitcoin wallet passwords, private keys, financial secrets, 
+                        and cryptocurrency secrets.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>Secrets Data Import</h3>
+                    <p>Import existing secrets from CSV files.</p>
+                </div>
             </div>
-            <div class="w-1000pc md-w-333pc p-10">
-                <p class="fw-600 white fs-m3 mt-3">
-                    Utilities: Ga Power, Atlanta Gas and Light, Comcast, AT&T, Dekalb Water / Sewer, City of Chamblee, No HOA
-                </p>
-            </div>
-            <div class="w-1000pc md-w-333pc p-10">
-                <p class="fw-600 white fs-m3 mt-3">
-                    <a href="https://homecoin.com/listing/3490-hildon-circle-chamblee-ga-30341/bptdSesLH3">View Listing</a>
-                </p>
-             </div>       
-            <div class="w-1000pc md-w-333pc p-10">
-                <p class="fw-600 white fs-m3 mt-3">
-                    Ph: 678-394-0340 (Voice Only - Cannot receive text messages)
-                </p>
-             </div>
-             <div class="w-1000pc md-w-333pc p-10">
-                <p class="fw-600 white fs-m3 mt-3">
-                    <a href="mailto:liwqc359g@mozmail.com">Send Email</a>
-                </p>
-            </div>
-
-       </div>           
+        </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="assets/js/script.js"></script>
-</body>
+    <!-- Security Deep Dive -->
+    <section id="security-policies" class="security">
+        <div class="container">
+            <div class="security-content">
+                
+                <div class="security-policies">
+                    <h3>Hardware Security Policies</h3>
+                    <p>Starksoft Sierra offers four Yubikey enforced hardware security level policies that can be set for each secret.  
+                       Choose the right policy to balance security and convenience.
+                    </p>
+                    
+                    <div class="policies-grid">
+                        <div class="policy-card policy-base">
+                            <div class="policy-icon">
+                                <img src="assets/images/hardware-security-icon.svg" alt="Hardware Security Icon">
+                            </div>
+                            <h4>Policy 1: Hardware Protected</h4>
+                            <p>Secret can be decrypted as long as Yubikey is plugged in.</p>
+                            <div class="policy-level">Base Security</div>
+                        </div>
+                        
+                        <div class="policy-card policy-secure">
+                            <div class="policy-icon">
+                                <img src="assets/images/finger-touch-security-icon.svg" alt="Finger Touch Security Icon">
+                            </div>
+                            <h4>Policy 2: Touch</h4>
+                            <p>Requires touching Yubikey to decrypt secret.</p>
+                            <div class="policy-level">Medium Security</div>
+                        </div>
+                        
+                        <div class="policy-card policy-secure">
+                            <div class="policy-icon">
+                                <img src="assets/images/pin-security-device-icon.svg" alt="PIN Security Device Icon">
+                            </div>
+                            <h4>Policy 3: PIN</h4>
+                            <p>Requires entering Yubikey PIN to decrypt secret.</p>
+                            <div class="policy-level">Medium-High Security</div>
+                        </div>
 
+                        
+                        <div class="policy-card policy-paranoid">
+                            <div class="policy-icon">
+                                <img src="assets/images/touch-and-pin-security-device-icon.svg" alt="Touch and PIN Security Icon">
+                            </div>
+                            <h4>Policy 4: Touch + PIN</h4>
+                            <p>Requires both physically touching Yubikey and entering Yubikey PIN to decrypt secret.</p>
+                            <div class="policy-level">High Security</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yubikey Compatibility Section -->
+    <section id="yubikey-compatibility" class="yubikey-compatibility">
+        <div class="container">
+            <div class="yubikey-content">
+                <div class="yubikey-info">
+                    <h2 class="section-title">Yubikey Hardware Devices</h2>
+                    <p class="yubikey-description"> Starksoft recommends the Yubikey 5 Series USB-C Nano (non NFC) for most users.
+                        Our software requires a YubiKey 5 Series hardware device
+                        but does not use NFC or any other wireless technology to communicate with the Yubikey.
+                        The device must be physically connected to your computer to be used with Starksoft Sierra.
+                    </p>
+                    <div class="yubikey-cta">
+                        <a href="https://www.yubico.com/product/yubikey-5-series/yubikey-5c-nano/" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn-primary">
+                            Buy Yubikeys
+                        </a>
+                    </div>
+                </div>
+                <div class="yubikey-visual">
+                    <img src="assets/images/yubikey-5-series-devices.png" 
+                         alt="YubiKey 5 Series Devices" 
+                         class="yubikey-devices-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Tutorials Section -->
+    <section id="video-tutorials" class="video-tutorials">
+        <div class="container">
+            <h2 class="section-title">Tutorials</h2>
+            
+            <div class="tutorials-grid">
+                <div class="tutorial-card">
+                    <div class="tutorial-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="How to Personalize Your Yubikey" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Personalize Yubikey</h3>
+                        <p>Learn how to set up and personalize your Yubikeys to prepare for use with 
+                            Starksoft Sierra. Configure multiple Yubikeys for backup access.</p>
+                        <div class="tutorial-duration">Duration: 5:30</div>
+                    </div>
+                </div>
+                
+                <div class="tutorial-card">
+                    <div class="tutorial-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="Create New Database" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Create New Database</h3>
+                        <p>Create your first encrypted database. Choose default encryption settings and 
+                            initialize the database for use with your Yubikeys.</p>
+                        <div class="tutorial-duration">Duration: 4:15</div>
+                    </div>
+                </div>
+                
+                <div class="tutorial-card">
+                    <div class="tutorial-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="Add and Manage Entries" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Create New Entries</h3>
+                        <p>Learn how to create new secret entries and organize them with tags and 
+                            categories for easy access.</p>
+                        <div class="tutorial-duration">Duration: 6:45</div>
+                    </div>
+                </div>
+                
+                <div class="tutorial-card">
+                    <div class="tutorial-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="Encryption and Decryption Process" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Decrypt Entries</h3>
+                        <p>Learn how to decrypt entries using your Yubikey.</p>
+                        <div class="tutorial-duration">Duration: 7:20</div>
+                    </div>
+                </div>
+                
+                <div class="tutorial-card">
+                    <div class="tutorial-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="How to Label and Organize Secrets" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Label and Organize Secrets</h3>
+                        <p>Learn how to effectively label and categorize your secrets. Create 
+                            custom tags for Bitcoin wallets, exchange accounts, and other crypto assets.</p>
+                        <div class="tutorial-duration">Duration: 4:50</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutorials-cta">
+                <p>Ready to try Starksoft Sierra?</p>
+                <a href="#download" class="btn-primary">Download Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title">Download Starksoft Sierra v1.1.0</h2>
+            <p class="section-subtitle">Free for Personal Use but Limited to 50 secrets.  
+                See <a href="#pricing">Licensing</a> for Details.<br>
+                Requires a <a href="#yubikey-compatibility" class="yubico-link">Yubikey 5 Series</a> Hardware Device.
+            </p>
+            <div class="download-grid">
+                <div class="download-card">
+                    <div class="platform-icon">🍎</div>
+                    <h3>macOS</h3>
+                    <p>Apple Silicon</p>
+                    <a href="/download/starksoft_sierra_1_1_0_mac_arm_p.zip" class="download-btn">Download for Mac</a>
+                    <div class="hash-info">
+                        <p><strong>SHA256:</strong></p>
+                        <div class="hash-container">
+                            <div class="hash-row">
+                                <code class="hash-code" id="hash-macos">3be87d88aa3c5c6b75446e6004ce5eb85b48c121561192dbdac0863aaf202d41</code>
+                                <button class="copy-btn" onclick="copyHash('hash-macos')" title="Copy hash">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <span class="copied-text" id="copied-macos">Copied</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="download-card">
+                    <div class="platform-icon">🪟</div>
+                    <h3>Windows</h3>
+                    <p>Windows 10+</p>
+                    <a href="download/starksoft_sierra_1_1_0_win64_x86_p.zip" class="download-btn">Download for Windows</a>
+                    <div class="hash-info">
+                        <p><strong>SHA256:</strong></p>
+                        <div class="hash-container">
+                            <div class="hash-row">
+                                <code class="hash-code" id="hash-windows">89b83d12d4fa95e6d7df0c03a62d803bd76f62223796fea3f4b9c91038f0b423</code>
+                                <button class="copy-btn" onclick="copyHash('hash-windows')" title="Copy hash">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <span class="copied-text" id="copied-windows">Copied</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="download-card">
+                    <div class="platform-icon">🐧</div>
+                    <h3>Linux</h3>
+                    <p>Tested on Ubuntu and Mint</p>
+                    <a href="download/starksoft_sierra_1_1_0_linux_x86_p.zip" class="download-btn">Download for Linux</a>
+                    <div class="hash-info">
+                        <p><strong>SHA256:</strong></p>
+                        <div class="hash-container">
+                            <div class="hash-row">
+                                <code class="hash-code" id="hash-linux">f8ac7742f74a2f15af3102e6b3beec30e243c50bdcae5b71c0779d4560b17c6d</code>
+                                <button class="copy-btn" onclick="copyHash('hash-linux')" title="Copy hash">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <span class="copied-text" id="copied-linux">Copied</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="download-info">
+                <p><strong>File Size:</strong> 4MB to 20MB | <strong>Requirements:</strong> <a href="#yubikey-compatibility" class="yubico-link">Yubikey 5 Series</a> | <strong>Installation:</strong> None required</p>
+                <p class="hash-verification-notice">
+                    Always <a href="verify-hash.html" class="yubico-link">verify zip file hashes</a> after downloading.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing/Licensing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Licensing</h2>
+            <p class="section-subtitle">Free for personal use, licensed for commercial use.</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card individual">
+                    <h3>Personal Use</h3>
+                    <div class="price">Free</div>
+                    <ul class="pricing-features">
+                        <li>✓ Full feature access</li>
+                        <li>✓ Secrets limited to 50 entries</li>
+                        <li>✓ Multiple Yubikey support</li>
+                        <li>✓ All major platforms</li>
+                        <li>✓ Personal use only</li>
+                    </ul>
+                    <a href="#download" class="pricing-btn">Download Free</a>
+                </div>
+                
+                <div class="pricing-card commercial">
+                    <h3>Commercial Use</h3>
+                    <div class="price">Contact Us</div>
+                    <ul class="pricing-features">
+                        <li>✓ Full feature access</li>
+                        <li>✓ Unlimited secrets</li>
+                        <li>✓ Multiple Yubikey support</li>
+                        <li>✓ All major platforms</li>
+                        <li>✓ Commercial use</li>
+                    </ul>
+                    <a href="#contact" class="pricing-btn">Get Quote</a>
+                </div>
+            </div>
+            
+            <div class="license-link-section">
+                <p class="license-link-text">
+                    <a href="license.html" class="license-link" target="_self">View Full End User License Agreement (EULA)</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What makes Starksoft Sierra different from other password managers?</h4>
+                    <p>Unlike cloud-based password managers, Sierra is a standalone application that can be
+                        used completely offline.  Every secret is uniquely encrypted and protected by hardware security using a Yubikey with PIN and touch
+                        security and policies.  When you use Starksoft Sierra,
+                        you must first decrypt your database using your Yubikey and unique Yubikey PIN.  
+                        However, even though your database is decrypted, every secret is still uniquely encrypted
+                        and protected by hardware security using a Yubikey.  Each secret is decrypted using the
+                        Yubikey with a specific Yubikey enforced policy.  This is very different than other password managers
+                        that decrypt the entire database after the password data is opened and decrypted.
+</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can I use this for Bitcoin and cryptocurrency wallets?</h4>
+                    <p>Starksoft Sierra is ideal for storing Bitcoin wallet passwords, 
+                        private keys, and other cryptocurrency secrets. The hardware-based 
+                        encryption provides high security for high-value digital assets.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What happens if I lose my Yubikey?</h4>
+                    <p>By design, you will lose access to your Sierra database secrets if you lose your Yubikey.  Therefore, we recommend initializing multiple Yubikeys during setup for backup or shared access.
+                         We recommend personalizing at least 2 to 3 Yubikeys and storing them in separate secure locations.  Each Yubikey can have a different PIN.  If a Yubikey is lost, you can 
+                        revoke (remove) the Yubikey from your Sierra database.  You can then use your remaining Yubikeys to access your Sierra database secrets.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Does this work on air-gapped computers?</h4>
+                    <p>Yes. Starksoft Sierra is specifically designed for air-gapped environments. It has zero 
+                        network capabilities and no external dependencies, making it ideal 
+                        for high-security environments.</p>
+                </div>  
+                
+                <div class="faq-item">
+                    <h4>What security technology is being used on the Yubikey to protect my secrets?</h4>
+                    <p>The Yubikey 5 series devices support a NIST US government security standard for federal employees called 
+                        <a href="https://csrc.nist.gov/projects/piv/piv-standards-and-supporting-documentation" target="_blank" class="yubico-link">Personal 
+                        Identity Verification or PIV</a>.  PIV Smart Cards incorporate advanced cryptographic algorithms for secure data transmission and storage.  
+                        The Yubikey 5 series devices <a href="https://www.yubico.com/authentication-standards/smart-card/" target="_blank" class="yubico-link">implement 
+                        the NIST SP 800-73 PIV Smart Card standard</a>.  Yubikey 5 series devices support PIV RSA and ECC encryption / decryption, private
+                        key storage protected by hardware security, public key storage, cryptographically secure random
+                        number generation in addition to physical security features such as a touch sensors and PINs.  The Yubikey PIV functions lock after a user-controllable number of failed PIN attempts.  
+                        Starksoft Sierra is tightly integrated with the Yubikey 5 series secure PIV implementation
+                        to protect your secrets.
+                        </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What are the defense-in-depth strategies used in the Starksoft Sierra application?</h4>
+                    <p>
+                        The Starksoft Sierra application implements a defense-in-depth strategy to protect your secrets.  
+                        The application implements a number of security defense-in-depth features to protect your secrets.
+                        <ul>
+                            <li>Hardware security</li>
+                            <li>Private RSA keys stored and protected inside Yubikey</li>
+                            <li>Memory security (custom protected memory)</li>
+                            <li>Storage security</li>
+                            <li>Application security</li>
+                            <li>UI security</li>
+                            <li>No file logging</li>
+                            <li>No network capabilities</li>
+                            <li>No external 3rd party dependencies</li>
+                        </ul>
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Is there a limit to the number of secrets I can store?</h4>
+                    <p>For the personal free version, there is a limit of 50 secret entries that can be stored per database.
+                       For the commercial version, there is no limit to the number of secrets you can store in Starksoft Sierra.  You can store as many secrets as you want.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>How many Yubikeys can I use?</h4>
+                    <p>There is no limit to the number of Yubikeys you can use with Starksoft Sierra.  You can register as many Yubikeys as you want for each database.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Does Startsoft Sierra work with other PIV compliant hardware security devices?</h4>
+                    <p>No, Starksoft Sierra is specifically designed to work with Yubikey 5 Series hardware security devices.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I use my existing Yubikey 5 Series MFA device with Starksoft Sierra? </h4>
+                    <p>Yes, if you have an existing Yubikey 5 Series device that are are using 
+                        for MFA (Multi Factor Authentication) but is not being used as a PIV Smart Card, 
+                        you can use it with Starksoft Sierra.  The personalization process will not affect 
+                        the existing MFA functionality of the Yubikey.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Are you using any cloud services?</h4>
+                    <p>No, Starksoft Sierra is a standalone application that has no cloud dependencies.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Are you using any 3rd party libraries to interface with the Yubikey?</h4>
+                    <p>No, Starksoft Sierra does not use any 3rd party libraries to communicate with Yubikey.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What 3rd party libraries are used to do cryptographic operations?</h4>
+                    <p>Starksoft Sierra uses the latest stable version of OpenSSL (3.5.x) to perform RSA public key encryption, AES cryptographic operations, 
+                        and cryptographically secure random number generation.  
+                        The Yubikey hardware performs all RSA private key decryption operations wielding the private key stored inside the Yubikey. 
+                        OpenSSL is statically linked into the Sierra application. Sierra does not use the OpenSSL shared library on the target platform Operation System.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Starksoft</h2>
+            <p class="section-subtitle">Questions about commercial licensing or technical support?</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Commercial Licensing</h4>
+                    <p>enterprise@starksoft.com</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h4>Technical Support</h4>
+                    <p>support@starksoft.com</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h4>General Inquiries</h4>
+                    <p>info@starksoft.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">starksoft.com</span>
+                </div>
+                <p>&copy; 2025 Starksoft LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        function copyHash(hashId) {
+            const hashElement = document.getElementById(hashId);
+            const hashText = hashElement.textContent;
+            const copiedTextId = hashId.replace('hash-', 'copied-');
+            const copiedElement = document.getElementById(copiedTextId);
+            
+            navigator.clipboard.writeText(hashText).then(function() {
+                // Show copied text
+                copiedElement.classList.add('show');
+                
+                setTimeout(function() {
+                    copiedElement.classList.remove('show');
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Failed to copy hash: ', err);
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = hashText;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                
+                // Show copied text
+                copiedElement.classList.add('show');
+                setTimeout(function() {
+                    copiedElement.classList.remove('show');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
 </html>

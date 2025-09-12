@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starksoft Sierra - File Hash Verification Guide</title>
+    <meta name="description" content="Step-by-step instructions to verify SHA-256 file hashes on macOS, Windows, and Linux">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-text">starksoft.com</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Back to Home</a></li>
+                <li><a href="index.html#download">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hash Verification Guide -->
+    <section class="hash-guide-page">
+        <div class="container">
+            <div class="hash-guide-content">
+                <h1>File Hash Verification Guide</h1>
+                <p class="guide-subtitle">Verify the integrity of your Starksoft Sierra download using SHA-256 checksums</p>
+                
+                <div class="security-notice">
+                    <h3>🔒 Why Verify File Hashes?</h3>
+                    <p>File hash verification ensures that your downloaded file hasn't been tampered with or corrupted during download. This is a critical security practice, especially for password management software.</p>
+                </div>
+
+                <div class="os-tabs">
+                    <button class="tab-button active" onclick="showTab('macos')">macOS</button>
+                    <button class="tab-button" onclick="showTab('windows')">Windows</button>
+                    <button class="tab-button" onclick="showTab('linux')">Linux</button>
+                </div>
+
+                <!-- macOS Instructions -->
+                <div id="macos" class="tab-content active">
+                    <h2>macOS Instructions</h2>
+                    
+                    <div class="step-section">
+                        <h3>Using Terminal</h3>
+                        <ol class="instruction-list">
+                            <li>
+                                <strong>Open Terminal</strong>
+                                <p>Press <kbd>Cmd + Space</kbd>, type "Terminal", and press Enter</p>
+                            </li>
+                            <li>
+                                <strong>Navigate to Downloads folder</strong>
+                                <div class="code-block">
+                                    <code>cd ~/Downloads</code>
+                                </div>
+                            </li>
+                            <li>
+                                <strong>Calculate SHA-256 hash</strong>
+                                <div class="code-block">
+                                    <code>shasum -a 256 starksoft-sierra-macos.dmg</code>
+                                </div>
+                                <p class="code-note">Replace <code>starksoft-sierra-macos.dmg</code> with your actual filename</p>
+                            </li>
+                            <li>
+                                <strong>Compare the output</strong>
+                                <p>The command will output a long string of letters and numbers. Compare this exactly with the SHA-256 hash provided on the download page.</p>
+                            </li>
+                        </ol>
+                    </div>
+
+
+                </div>
+
+                <!-- Windows Instructions -->
+                <div id="windows" class="tab-content">
+                    <h2>Windows Instructions</h2>
+                    
+                    <div class="step-section">
+                        <h3>Using PowerShell</h3>
+                        <ol class="instruction-list">
+                            <li>
+                                <strong>Open PowerShell</strong>
+                                <p>Press <kbd>Win + X</kbd> and select "Windows PowerShell" or "Terminal"</p>
+                            </li>
+                            <li>
+                                <strong>Navigate to Downloads folder</strong>
+                                <div class="code-block">
+                                    <code>cd $env:USERPROFILE\Downloads</code>
+                                </div>
+                            </li>
+                            <li>
+                                <strong>Calculate SHA-256 hash</strong>
+                                <div class="code-block">
+                                    <code>Get-FileHash -Algorithm SHA256 starksoft-sierra-windows.exe</code>
+                                </div>
+                                <p class="code-note">Replace <code>starksoft-sierra-windows.exe</code> with your actual filename</p>
+                            </li>
+                            <li>
+                                <strong>Compare the Hash value</strong>
+                                <p>Look for the "Hash" field in the output and compare it with the provided SHA-256 hash.</p>
+                            </li>
+                        </ol>
+                    </div>
+
+
+                </div>
+
+                <!-- Linux Instructions -->
+                <div id="linux" class="tab-content">
+                    <h2>Linux Instructions</h2>
+                    
+                    <div class="step-section">
+                        <h3>Using Terminal</h3>
+                        <ol class="instruction-list">
+                            <li>
+                                <strong>Open Terminal</strong>
+                                <p>Press <kbd>Ctrl + Alt + T</kbd> or search for "Terminal" in your applications</p>
+                            </li>
+                            <li>
+                                <strong>Navigate to Downloads folder</strong>
+                                <div class="code-block">
+                                    <code>cd ~/Downloads</code>
+                                </div>
+                            </li>
+                            <li>
+                                <strong>Calculate SHA-256 hash</strong>
+                                <div class="code-block">
+                                    <code>sha256sum starksoft-sierra-linux.tar.gz</code>
+                                </div>
+                                <p class="code-note">Replace <code>starksoft-sierra-linux.tar.gz</code> with your actual filename</p>
+                            </li>
+                            <li>
+                                <strong>Compare the output</strong>
+                                <p>The first part of the output (before the filename) is the SHA-256 hash. Compare this with the provided hash.</p>
+                            </li>
+                        </ol>
+                    </div>
+
+
+                </div>
+
+                <div class="guide-actions">
+                    <a href="index.html#download" class="btn-primary">Back to Downloads</a>
+                    <a href="index.html#getting-started" class="btn-secondary">Getting Started Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showTab(osName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all buttons
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => button.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(osName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<svg width="128" height="128" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- First Hardware Security Device (bottom) -->
+  <rect x="8" y="42" width="24" height="10" rx="2" ry="2" 
+        fill="#2563eb" stroke="#1d4ed8" stroke-width="1.5"/>
+  
+  <!-- USB Connector 1 -->
+  <rect x="32" y="45" width="3" height="4" rx="0.5" ry="0.5" 
+        fill="#6b7280" stroke="#4b5563" stroke-width="1"/>
+  
+  <!-- Touch Button 1 -->
+  <circle cx="20" cy="47" r="2.5" fill="#374151" stroke="#4b5563" stroke-width="1"/>
+  <circle cx="20" cy="47" r="1" fill="#6b7280"/>
+  
+  <!-- LED 1 -->
+  <circle cx="14" cy="47" r="0.8" fill="#10b981"/>
+  
+  <!-- Device details 1 -->
+  <rect x="10" y="45" width="4" height="0.8" rx="0.3" fill="#93c5fd" opacity="0.7"/>
+  <rect x="10" y="49" width="5" height="0.8" rx="0.3" fill="#93c5fd" opacity="0.7"/>
+  
+  <!-- Second Hardware Security Device (middle) -->
+  <rect x="20" y="26" width="24" height="10" rx="2" ry="2" 
+        fill="#1e40af" stroke="#1d4ed8" stroke-width="1.5"/>
+  
+  <!-- USB Connector 2 -->
+  <rect x="44" y="29" width="3" height="4" rx="0.5" ry="0.5" 
+        fill="#6b7280" stroke="#4b5563" stroke-width="1"/>
+  
+  <!-- Touch Button 2 -->
+  <circle cx="32" cy="31" r="2.5" fill="#374151" stroke="#4b5563" stroke-width="1"/>
+  <circle cx="32" cy="31" r="1" fill="#6b7280"/>
+  
+  <!-- LED 2 -->
+  <circle cx="26" cy="31" r="0.8" fill="#fbbf24"/>
+  
+  <!-- Device details 2 -->
+  <rect x="22" y="29" width="4" height="0.8" rx="0.3" fill="#93c5fd" opacity="0.7"/>
+  <rect x="22" y="33" width="5" height="0.8" rx="0.3" fill="#93c5fd" opacity="0.7"/>
+  
+  <!-- Third Hardware Security Device (top) -->
+  <rect x="32" y="10" width="24" height="10" rx="2" ry="2" 
+        fill="#1e3a8a" stroke="#1d4ed8" stroke-width="1.5"/>
+  
+  <!-- USB Connector 3 -->
+  <rect x="56" y="13" width="3" height="4" rx="0.5" ry="0.5" 
+        fill="#6b7280" stroke="#4b5563" stroke-width="1"/>
+  
+  <!-- Touch Button 3 -->
+  <circle cx="44" cy="15" r="2.5" fill="#374151" stroke="#4b5563" stroke-width="1"/>
+  <circle cx="44" cy="15" r="1" fill="#6b7280"/>
+  
+  <!-- LED 3 -->
+  <circle cx="38" cy="15" r="0.8" fill="#ef4444"/>
+  
+  <!-- Device details 3 -->
+  <rect x="34" y="13" width="4" height="0.8" rx="0.3" fill="#93c5fd" opacity="0.7"/>
+  <rect x="34" y="17" width="5" height="0.8" rx="0.3" fill="#93c5fd" opacity="0.7"/>
+  
+  <!-- Lanyard holes -->
+  <circle cx="12" cy="47" r="1" fill="none" stroke="#1d4ed8" stroke-width="1"/>
+  <circle cx="24" cy="31" r="1" fill="none" stroke="#1d4ed8" stroke-width="1"/>
+  <circle cx="36" cy="15" r="1" fill="none" stroke="#1d4ed8" stroke-width="1"/>
+  
+
+</svg>

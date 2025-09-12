@@ -1,0 +1,12 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Large Zero -->
+  <g transform="translate(32, 32)">
+    <!-- Zero shape -->
+    <ellipse cx="0" cy="0" rx="20" ry="24" fill="none" stroke="#cccccc" stroke-width="4"/>
+    <!-- Inner hole of zero -->
+    <ellipse cx="0" cy="0" rx="12" ry="16" fill="none" stroke="#cccccc" stroke-width="2"/>
+  </g>
+  
+  <!-- Diagonal slash through the zero -->
+  <line x1="12" y1="12" x2="52" y2="52" stroke="#ff4444" stroke-width="4" stroke-linecap="round"/>
+</svg>
