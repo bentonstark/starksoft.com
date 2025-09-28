@@ -21,7 +21,7 @@ This End User License Agreement ("Agreement") is a legal agreement between you (
 
 ### Commercial Use License (Paid)
 - **Commercial License Required**: Any use in a business, commercial, or organizational environment requires a separate paid commercial license.
-- **Contact Required**: Contact enterprise@starksoft.com for commercial licensing terms.
+- **Contact Required**: Contact starksoft.com for commercial licensing terms.
 
 ---
 
@@ -124,9 +124,7 @@ This Agreement is governed by the laws of the State of Georgia, United States, w
 ## 12. CONTACT INFORMATION
 
 **Starksoft**
-- **General Inquiries**: info@starksoft.com
-- **Commercial Licensing**: enterprise@starksoft.com  
-- **Technical Support**: support@starksoft.com
+- **All Inquiries**: starksoft.com
 
 ---
 
