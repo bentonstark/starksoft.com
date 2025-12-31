@@ -28,52 +28,22 @@
     <section class="hash-guide-page">
         <div class="container">
             <div class="hash-guide-content">
-                <h1>File Hash Verification Guide</h1>
-                <p class="guide-subtitle">Verify the integrity of your Starksoft Sierra download using SHA-256 checksums</p>
+                <h1>File Hash Verification Guide for Linux and Windows</h1>
+                <p class="guide-subtitle">Verify the integrity of your Starksoft Sierra Linux and Windows download using SHA-256 checksums.
+                    Mac binaries are signed and notarized and thus verified by MacOS automatically.
+                </p>
                 
                 <div class="security-notice">
                     <h3>🔒 Why Verify File Hashes?</h3>
-                    <p>File hash verification ensures that your downloaded file hasn't been tampered with or corrupted during download. This is a critical security practice, especially for password management software.</p>
+                    <p>File hash verification ensures that your downloaded file hasn't been tampered with or corrupted during download. 
+                        This is a critical security practice, especially for password management software.
+                        Note that Mac binaries are automatically verified by MacOS.
+                    </p>
                 </div>
 
                 <div class="os-tabs">
-                    <button class="tab-button active" onclick="showTab('macos')">macOS</button>
                     <button class="tab-button" onclick="showTab('windows')">Windows</button>
                     <button class="tab-button" onclick="showTab('linux')">Linux</button>
-                </div>
-
-                <!-- macOS Instructions -->
-                <div id="macos" class="tab-content active">
-                    <h2>macOS Instructions</h2>
-                    
-                    <div class="step-section">
-                        <h3>Using Terminal</h3>
-                        <ol class="instruction-list">
-                            <li>
-                                <strong>Open Terminal</strong>
-                                <p>Press <kbd>Cmd + Space</kbd>, type "Terminal", and press Enter</p>
-                            </li>
-                            <li>
-                                <strong>Navigate to Downloads folder</strong>
-                                <div class="code-block">
-                                    <code>cd ~/Downloads</code>
-                                </div>
-                            </li>
-                            <li>
-                                <strong>Calculate SHA-256 hash</strong>
-                                <div class="code-block">
-                                    <code>shasum -a 256 starksoft-sierra-macos.dmg</code>
-                                </div>
-                                <p class="code-note">Replace <code>starksoft-sierra-macos.dmg</code> with your actual filename</p>
-                            </li>
-                            <li>
-                                <strong>Compare the output</strong>
-                                <p>The command will output a long string of letters and numbers. Compare this exactly with the SHA-256 hash provided on the download page.</p>
-                            </li>
-                        </ol>
-                    </div>
-
-
                 </div>
 
                 <!-- Windows Instructions -->
@@ -96,9 +66,9 @@
                             <li>
                                 <strong>Calculate SHA-256 hash</strong>
                                 <div class="code-block">
-                                    <code>Get-FileHash -Algorithm SHA256 starksoft-sierra-windows.exe</code>
+                                    <code>Get-FileHash -Algorithm SHA256 starksoft_sierra_1_2_0_win64_x86_p.zip</code>
                                 </div>
-                                <p class="code-note">Replace <code>starksoft-sierra-windows.exe</code> with your actual filename</p>
+                                <p class="code-note">Replace <code>starksoft_sierra_1_2_0_win64_x86_p.zip</code> with your actual filename</p>
                             </li>
                             <li>
                                 <strong>Compare the Hash value</strong>
@@ -130,9 +100,9 @@
                             <li>
                                 <strong>Calculate SHA-256 hash</strong>
                                 <div class="code-block">
-                                    <code>sha256sum starksoft-sierra-linux.tar.gz</code>
+                                    <code>sha256sum starksoft_sierra_1_2_0_linux_x86_p.zip</code>
                                 </div>
-                                <p class="code-note">Replace <code>starksoft-sierra-linux.tar.gz</code> with your actual filename</p>
+                                <p class="code-note">Replace <code>starksoft_sierra_1_2_0_linux_x86_p.zip</code> with your actual filename</p>
                             </li>
                             <li>
                                 <strong>Compare the output</strong>
